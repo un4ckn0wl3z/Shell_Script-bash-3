@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo -n "Are you continue process ? [y/Y/n/N/] > : "; read INPUT
+
+case "$INPUT" in
+	[yY]) echo "Your job are processing !" ;;
+		[nN]) echo "Your job are cancled !" ;;
+			*) echo "entry is false.."
+				echo "The valid entry are [y/Y/n/N]" ;;
+esac
+
+ 

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" == "Apple" ]
+then
+	echo "My fruit is $1"
+elif [ "$1" == "Orange" ]
+then
+	echo "My fruit is $1"
+else
+	echo "I don't know"
+fi
+
+

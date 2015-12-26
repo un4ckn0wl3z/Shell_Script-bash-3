@@ -1,0 +1,20 @@
+#!/bin/bash
+#code by !Qqxd
+
+if [ -z $1 ]
+then
+	rental="*** Unknow vehicle ***"
+elif [ -n $1 ]
+then
+	rental=$1
+fi
+
+case $rental in
+	"car") echo "For $rental 20 $ per day" ;;
+	"van") echo "For $rental 10 $ per day" ;;
+	"jeep") echo "For $rental 5 $ per day" ;;
+	"bicycle") echo "For $rental 20 paisa per day" ;;
+	*) echo "Sorry, I can not get a $rental for you.." ;;
+esac
+
+
